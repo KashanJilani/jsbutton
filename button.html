@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Button</title>
+</head>
+<body>
+    <h1 id="data">Name</h1>
+    <button onclick="data('Blue')">Click to change Name </button>
+    <button onclick="data('sdsad')">Click to change Name </button>
+    <button onclick="data('cvbvbvcb')">Click to change Name </button>
+    <button onclick="data('dfrd')">Click to change Name </button>
+    <button onclick="data('335')">Click to change Name </button>
+
+    <h1 id="change">Age</h1>
+    <button onclick="changeColor('blue');">blue</button>
+  <button onclick="changeColor('red');">red</button>
+  <button onclick="changeColor('brown');">brown</button>
+  <button onclick="changeColor('yellow');">yellow</button>
+
+</body>
+</html>
+
+<script>
+
+    function data(a){
+        document.getElementById("data").innerHTML=a;
+
+        document.getElementById("data").style.color="Blue"; 
+    }
+    function changeColor(newColor) {
+  var elem = document.getElementById('change');
+  elem.style.color = newColor;
+}
+</script>
